@@ -14,7 +14,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram import Client, filters
 
 # Replace `YourRobot` with your robot and import pyrogram client from it.
-from YourRobot import pbot
+from Messi import pbot
 
 API_URL: str = "https://sasta-api.vercel.app/google_reverse"
 
@@ -39,9 +39,6 @@ class STRINGS:
     RESULT: str = """
 🔤 <b>Query:</b> <code>{query}</code>
 🔗 <b>Page Link:</b> <a href="{page_url}">Link</a>
-
-⌛️ <b>Time Taken:</b> <code>{time_taken}</code> seconds.
-🧑‍💻 <b>Credits:</b> @KangersNetwork
     """
     OPEN_PAGE: str = "↗️ Open Page"
 
