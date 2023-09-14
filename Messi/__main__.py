@@ -81,8 +81,8 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "https://graph.org//file/b132c3bcde2bf678189e8.mp4" 
-    
+GROUP_START_IMG = "https://te.legra.ph/file/dcb028440757ea5153898.jpg" 
+STAMRT_IMG = "https://te.legra.ph/file/dcb028440757ea5153898.jpg"    
     
 PM_START_TEXT = """
 *Hello {} !*
@@ -106,7 +106,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="+  Add Me To Your Group +", url=f"t.me/messi_probot?startgroup=new"),
+            text="+  Add Me To Your Group +", url=f"t.me/SpamGuardianBot?startgroup=new"),
     ],
 ]
 
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 STAMRT_IMG,
-                caption = "<b>Hello {} </b>\nI'm an Anime-Themed Group Management Robot\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n<b>Alive Since:</b> <code>{}</code>\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\nHit /help to get list of possible commands.".format(
+                caption = "<b>Hello {} </b>\nI'm a modular Group Management Robot\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n<b>Alive Since:</b> <code>{}</code>\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\nHit /help to get list of possible commands.".format(
                     escape_markdown(first_name),
                     escape_markdown(uptime)),
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
         ENMUSTART = "https://graph.org//file/754f1f7b136bf65be0511.mp4"
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
-           ENMUSTART, caption= "<b> Hello {} \nI Am 𝙰𝚕𝚒𝚟𝚎 𝚜𝚒𝚗𝚌𝚎</b>: <code>{}</code>".format(
+           GROUP_START_IMG, caption= "<b> Hello {} \nI Am 𝙰𝚕𝚒𝚟𝚎 𝚜𝚒𝚗𝚌𝚎</b>: <code>{}</code>".format(
                 escape_markdown(first_name),
                 uptime
             ),
@@ -792,7 +792,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "[⚽️](https://graph.org//file/8f830535f8a86f3bf4298.jpg) Hi my dear fans, [Messi](t.me/messi_probot) is back alive.",
+                "Hi, Notifying The Developers That The Bot Is Back Alive.",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
