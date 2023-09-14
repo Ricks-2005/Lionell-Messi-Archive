@@ -43,7 +43,7 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-pyrogram==2.0.106
+pyrogram==2.0.41
 PyDictionary
 git+https://github.com/Sorrybabe/downloader
 youtube_search_python==1.4.9
@@ -52,7 +52,7 @@ lyrics_extractor
 asyncio
 cloudscraper
 dateparser
-pymongo
+pymongo==4.1.1
 dnspython
 secureme
 apscheduler
