@@ -16,9 +16,9 @@ from Messi import (
     dispatcher,
 )
 OWNER_WELCOME_MEDIA = "https://telegra.ph/file/0318555d451ded9988b4e.jpg"
-LOG_CHANNEL = "-1001555358542"
-UPDATE_CHANNEL = "Messi_Probot_Team"
-SUPPORT_CHAT = "messi_probot_support"
+LOG_CHANNEL = "--1001322642907"
+UPDATE_CHANNEL = "RengokuUpdates"
+SUPPORT_CHAT = "RengokuSupport"
 from Messi.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
@@ -200,7 +200,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
         if should_welc:
             
             # Give the Repo Creator a special welcome
-            if new_mem.id == 2078455329:
+            if new_mem.id == 6227314727:
                 update.effective_message.reply_photo(
                     "https://telegra.ph/file/cc586ec8c25a40b4f4f69.jpg", reply_to_message_id=reply
                 )
@@ -657,7 +657,7 @@ def left_member(update: Update, context: CallbackContext):  # sourcery no-metric
             # Give the devs a special goodbye
             if left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Eagle Union!",
+                    "See you later at the Primes",
                     reply_to_message_id=reply,
                 )
                 return
