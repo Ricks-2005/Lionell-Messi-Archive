@@ -52,7 +52,7 @@ lyrics_extractor
 asyncio
 cloudscraper
 dateparser
-pymongo==4.1.1
+pymongo==4.3.3
 dnspython
 secureme
 apscheduler
