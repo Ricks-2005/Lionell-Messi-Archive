@@ -219,23 +219,21 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            uptime = get_readable_time((time.time() - StartTime))
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(
+            update.effective_message.reply_photo(
+                STAMRT_IMG,
+                caption = "<b>Hello {} </b>\nI'm an Anime-Themed Group Management Robot\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n<b>Alive Since:</b> <code>{}</code>\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\nHit /help to get list of possible commands.".format(
                     escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),                        
+                    escape_markdown(uptime)),
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 timeout=60,
-                disable_web_page_preview=False,
             )
-               
     else:
-        update.effective_message.reply_animation(
-            GROUP_START_IMG,
-            caption="<code> Hey there I am with you Since</code>: <code>{}</code>".format(
+        ENMUSTART = "https://graph.org//file/754f1f7b136bf65be0511.mp4"
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_video(
+           ENMUSTART, caption= "<b> Hello {} \nI Am 𝙰𝚕𝚒𝚟𝚎 𝚜𝚒𝚗𝚌𝚎</b>: <code>{}</code>".format(
+                escape_markdown(first_name),
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -243,9 +241,13 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="U P D A T E S", url="https://t.me/Messi_Probot_Team"
+                            text="Support",
+                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
                         ),
-                    ],
+                        InlineKeyboardButton(
+                          text="Help", url=f"https://t.me/SpamGuardianBot?start=help"
+                        ),  
+                    ]
                 ]
             ),
         )
