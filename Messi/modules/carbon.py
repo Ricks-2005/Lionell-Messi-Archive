@@ -24,33 +24,33 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/36e580047ea41f4036666.jpg"
+MEMEK = "https://te.legra.ph/file/dcb028440757ea5153898.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Messi** 
+        caption=f"""✨ **Hey I'm SpamGuardian** 
 
-**Owner of repo : [Messi Probot Team](https://t.me/Messi_Probot_Team)**
+**Owner of repo : [PrimesDivision](https://t.me/SpamGuardianBot)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
 **Pyrogram Version :** `{z}`
 ** My collaborators**
-** 1) [Flame](https://t.me/rickz_2005)**
+** 1) [Flame](https://t.me/CipherFlame)**
 ** 1) [Alpha](https://t.me/immortalsxking)**
 ** 2) [Ds x Hashira](https://t.me/ricks_005)**
 
-**Sorry but the repo is not available till the bot reaches 100 chats**
+**Follow The Given Buttons For Source Code**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Network", url="https://t.me/Messi_probot_Team"), 
+                        "Source", url="https://github.com/rick40096/lionell-messi-archive"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/Messi_Probot_Support")
+                        "Support", url="https://t.me/RengokuSupport")
                 ]
             ]
         )
