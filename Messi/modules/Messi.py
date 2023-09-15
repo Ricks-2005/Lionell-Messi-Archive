@@ -1,3 +1,4 @@
+'''
 import os
 import re
 import random
@@ -19,3 +20,4 @@ async def awake(event):
    Thanks For Adding Me Here ❤️ re ❤️ **"
   BUTTON = [[Button.url("Help", "https://t.me/spamguardianbot?start=help"), Button.url("My Home", "https://t.me/TeleSupportChat")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
+'''
