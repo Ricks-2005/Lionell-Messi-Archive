@@ -11,7 +11,7 @@ from Messi import MONGO_DB_URI
 from Messi import telethn
 
 client = MongoClient()
-client = MongoClient(mongodb+srv://enmu:enmu123@enmu.2cuev.mongodb.net/myFirstDatabase?retryWrites=true&w=majority)
+client = MongoClient("mongodb+srv://enmu:enmu123@enmu.2cuev.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = client["Messi"]
 gbanned = db.gban
 
