@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 STAMRT_IMG,
-                caption = "<b>Hello {} </b>\nI'm a modular Group Management Robot\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n<b>Alive Since:</b> <code>{}</code>\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\nHit /help to get list of possible commands.".format(
+                caption = "<b>Hello {} </b>\nI'm a modular Group Management Robot\n────────────────────────\n<b>Alive Since:</b> <code>{}</code>\n────────────────────────\nHit /help to get list of possible commands.".format(
                     escape_markdown(first_name),
                     escape_markdown(uptime)),
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -379,7 +379,7 @@ def messi_about_callback(update, context):
     query = update.callback_query
     if query.data == "messi_":
         query.message.edit_text(
-            text=f"๏ I'm *Lionell Messi*, a powerful group management bot built to help you manage your group easily."
+            text=f"๏ I'm *Spam Guardian*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -401,7 +401,7 @@ def messi_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="messi_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/HashiraAssociation/Lionell"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/PrimexRick/Lionell-Messi-Archive"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back"),
@@ -446,8 +446,8 @@ def messi_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Messi_Probot_Support"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Messi_Probot_Team"),
+                    InlineKeyboardButton(text="Support", url="t.me/RengokuSupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/PrimesDivision"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="messi_"),
@@ -467,7 +467,7 @@ def messi_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="H A S H I R A", url="https://github.com/HashiraAssociation"
+                            text="H A S H I R A", url="https://github.com/PrimexRick"
                         ),
                         InlineKeyboardButton(
                             text="H A S H I R A (telegram)", url="https://t.me/Hashira_Association"
@@ -551,7 +551,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/messi_probot?start=help".format(context.bot.username),
+                            url="t.me/SpamGuardianBot?start=help".format(context.bot.username),
                         )
                     ]
                 ]
