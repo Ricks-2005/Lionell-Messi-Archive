@@ -13,7 +13,7 @@ PHOTO = "https://te.legra.ph/file/dcb028440757ea5153898.jpg"
 
 @register(pattern=("activate"))
 async def awake(event):
-  TEXT += f"Hi {event.sender.first_name}, I'm **SpamGuardian**.\n\n"
+  TEXT = f"Hi {event.sender.first_name}, I'm **SpamGuardian**.\n\n"
   TEXT += f"❄ SpamGuardian Is Alive **"\n\n
   TEXT += f"❄ My Domain : [Primes](https://t.me/PrimesDivision)**\n\n"
   TEXT += f"❄**Powered By: [Primes Team](https://t.me/PrimesxTech)**\n\n"
