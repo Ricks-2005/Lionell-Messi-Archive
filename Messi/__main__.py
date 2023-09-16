@@ -96,19 +96,10 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="messi_"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="My Officials", url=f"t.me/Fifa_Federation"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="+  Add Me To Your Group +", url=f"t.me/SpamGuardianBot?startgroup=new"),
-    ],
-]
+ InlineKeyboardButton(text="Support", url="https://t.me/RengokuSupport"),
+ InlineKeyboardButton(text="About Spamguardian", callback_data="messi"),],
+[InlineKeyboardButton(text="Add Me To Your Group", url="http://t.me/SpamGuardianBot?startgroup=true")]]
+
 
 
 HELP_STRINGS = """
