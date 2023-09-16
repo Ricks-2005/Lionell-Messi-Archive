@@ -97,7 +97,7 @@ PM_START_TEXT = """
 buttons = [
     [
  InlineKeyboardButton(text="Support", url="https://t.me/RengokuSupport"),
- InlineKeyboardButton(text="About Spamguardian", callback_data="messi"),],
+ InlineKeyboardButton(text="About Spamguardian", callback_data="messi_"),],
 [InlineKeyboardButton(text="Add Me To Your Group", url="http://t.me/SpamGuardianBot?startgroup=true")]]
 
 
@@ -107,7 +107,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting the members of @messi_probot_team \
+ You can support the project by contacting the members of @SpamGuardianBot \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
