@@ -97,7 +97,7 @@ PM_START_TEXT = """
 buttons = [
     [
  InlineKeyboardButton(text="Support", url="https://t.me/RengokuSupport"),
- InlineKeyboardButton(text="About Spamguardian", callback_data="messi_"),],
+ InlineKeyboardButton(text="About Spamguardian", callback_data="messi_about_callback"),],
 [InlineKeyboardButton(text="Add Me To Your Group", url="http://t.me/SpamGuardianBot?startgroup=true")]]
 
 
